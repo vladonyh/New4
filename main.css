@@ -25,7 +25,6 @@ html {
 .post .card-img-top {
         border-radius: 0;
        max-height: 350px;
-       max-width: 100%;
 }
 .post {
     margin-top: 50px;
