@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Занятие-10</title>
+  <style>
+    input {
+      display: block;
+      margin: 1em;
+    }
+  </style>
+</head>
+<body>
+  <input id="text" name="" type="text"/>
+  <input name="" type="email" value=""/>
+  <input name="" type="password" value=""/>
+  <input name="" type="radio" value="" />
+  <input name="" type="checkbox" value=""/>
+  <input name="" type="submit" value=""/>
+  <input name="" type="button" value="Кнопка" />
+
+  <script>
+ let text = document.getElementById('text')
+ let inputs = document.getElementsByTagName('input')
+
+ const changeText = function() {
+      conslo.log(this.value);
+ }
+ const focusIn = function() {
+      console.log('Тыкнули на "input". Вводите текст')
+ }
+ const focusOut = function() {
+      console.log('Вышли на "input". Вводите уже нельзя')
+ }
+ for (let input of inputs) {
+   input.addEventListener('change', changeText, false)
+   input.addEventListener('focus', focusIn, false)
+   input.addEventListener('blur', focusOut, false)
+ }
+  </script>
+</body>
+</html>
