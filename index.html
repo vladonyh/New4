@@ -22,7 +22,7 @@
     <img src="./blur/7.jpg" data-src="./img/7.jpg" class="card-img-top" class="blur" alt="">
     </div>
     <script>
-    let lazyArray = Array.from(document.querySelectorAll('.blur'));
+    let lazyArray = Array.from(document.querySelectorAll('.card-img-top'));
     let scrollCounter = 0;
        document.addEventListener('DOMContentLoaded', function() {
           document.addEventListener('scroll', lazyLoad, false);
